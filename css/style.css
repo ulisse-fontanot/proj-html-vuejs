@@ -68,6 +68,11 @@
   margin: 10px 0;
 }
 
+.container{
+  width: 80%;
+  margin: auto;
+}
+
 /* BUTTON */
 .button{
   display: flex;
@@ -90,6 +95,24 @@
 /* OGGETTI VARI */
 li{
   list-style: none;
+}
+
+.titolone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  font-size: 25px;
+}
+
+.titolone strong{
+  font-size: 60px;
+}
+
+.titolone button{
+  font-size: 25px;
 }
 
 /* WARNING: riutilizzabili */
@@ -129,18 +152,8 @@ li{
   position: relative;
 }
 
-.jumbo-title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 400px;
-  margin: auto;
-  padding-top: 200px;
-}
-
-.jumbo-title strong{
-  font-size: 50px;
+.jumbo .titolone{
+  padding-top: 150px;
 }
 
 .alto-sx-orange{
@@ -207,3 +220,35 @@ li{
 /* JUMBO */
 
 /* HEADER */
+
+/* MAIN */
+
+/* UNDERSTAND */
+.understand-box-container{
+  width: 100%;
+  display: flex;
+}
+
+.understand-box{
+  width: 25%;
+  padding: 20px;
+}
+/* UNDERSTAND */
+
+/* COACH */
+.coach .container{
+  display: flex;
+}
+
+.coach .titolone{
+  width: 33%;
+  padding: 20px;
+}
+
+.coach .coach-right{
+  width: 67%;
+  padding: 70px 30px 0;
+}
+/* COACH */
+
+/* MAIN */
