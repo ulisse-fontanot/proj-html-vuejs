@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css\style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app">
+    <!-- HEADER -->
+    <header>
+      <!-- TIMER -->
+      <section class="timer bg-lightgrey p-tb-10">
+        <span class="text-darkgrey m-lr-10">Start TOMORROW! Our biggest event of the year...</span>
+        <i class="far fa-clock m-lr-10"></i>
+        <strong class="m-lr-10">00 : 00 : 00 : 00</strong>
+        <button class="bg-orange text-white button m-lr-10">Get started</button>
+      </section>
+      <!-- TIMER -->
+      <!-- MENU -->
+      <section class="menu p-tb-10">
+        <div class="logo">
+          <img src="img/dark-logo.png" alt="">
+        </div>
+        <div class="navbar">
+          <ul>
+            <li v-for="el in menu" class="p-lr-10">{{el}}<i class="fas fa-chevron-down p-lr-10"></i></li>
+          </ul>
+        </div>
+        <div class="social">
+          <i class="fab fa-twitter p-lr-10"></i>
+          <i class="fab fa-facebook-f p-lr-10"></i>
+          <i class="fab fa-instagram p-lr-10"></i>
+          <i class="fab fa-linkedin p-lr-10"></i>
+        </div>
+      </section>
+      <!-- MENU -->
+      <!-- JUMBO -->
+      <section class="jumbo">
+
+      </section>
+      <!-- JUMBO -->
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main>
+      <section class="understand">
+
+      </section>
+      <section class="coach">
+
+      </section>
+      <section class="media">
+
+      </section>
+      <section class="love">
+
+      </section>
+      <section class="corsi">
+
+      </section>
+      <section class="blog">
+
+      </section>
+      <section class="work">
+
+      </section>
+    </main>
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="mail">
+
+      </section>
+      <section class="fondo">
+
+      </section>
+    </footer>
+    <!-- FOOTER -->
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

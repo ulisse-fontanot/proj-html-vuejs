@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* WARNING: riutilizzabili */
+/* COLORI TESTI */
+.text-white{
+  color: white;
+}
+
+.text-black{
+  color: #1b1b1b;
+}
+
+.text-orange{
+  color: #efab43;
+}
+
+.text-celeste{
+  color: #b1e4f4;
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-lightgrey{
+  color: #bcbcbc;
+}
+
+.text-darkgrey{
+  color: #797979;
+}
+
+/* COLORI SFONDO */
+.bg-white{
+  background-color: white;
+}
+
+.bg-lightgrey{
+  background-color: #f4f0ef;
+}
+
+.bg-orange{
+  background-color: #efab43;
+}
+
+.bg-celeste{
+  background-color: rgba(#b1e4f4, 0.7);
+}
+
+/* SPAZI */
+.p-lr-10{
+  padding: 0 10px;
+}
+
+.p-tb-10{
+  padding: 10px 0;
+}
+
+.m-lr-10{
+  margin: 0 10px;
+}
+
+.m-tb-10{
+  margin: 10px 0;
+}
+
+/* BUTTON */
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+/* OMBRE */
+.shadow{
+  box-shadow: 10px 10px 10px #888888;
+}
+
+/* OGGETTI VARI */
+li{
+  list-style: none;
+}
+
+/* WARNING: riutilizzabili */
+
+
+/* HEADER */
+/* TIMER */
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* TIMER */
+
+/* MENU */
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+/* MENU */
+
+
+/* HEADER */
