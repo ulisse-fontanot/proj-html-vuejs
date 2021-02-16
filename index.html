@@ -136,42 +136,23 @@
           <strong class="text-celeste">Testimonials</strong>
           <h2 class="p-tb-10">Why do people love me?</h2>
         </div>
-        <div class="slider">
-          <div class="box-slider left">
-            <h2>It's a choice of quality for people with special needs</h2>
-            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div>
-              <img class="p-t-5" src="img/artist-testimonial-avatar-02.jpg">
-              <div>
-                <h3 class="p-t-5">{{teacher[3].nome}}</h3>
-                <h4 class="text-darkgrey p-t-5">{{teacher[3].materia}}</h4>
-              </div>
-            </div>
-          </div>
 
-          <div class="box-slider center">
+        <div class="slider m-tb-10">
+          <div v-for="(prof, index) in teacher" class="box-slider" :class="(index == counter) ? '' : 'opacity' ">
             <h2>It's a choice of quality for people with special needs</h2>
             <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div>
-              <img class="p-t-5" src="img/artist-testimonial-avatar-02.jpg">
+              <img class="p-t-5" :src="teacher.src">
               <div>
-                <h3 class="p-t-5">{{teacher[0].nome}}</h3>
-                <h4 class="text-darkgrey p-t-5">{{teacher[0].materia}}</h4>
+                <h3 class="p-t-5">{{prof.nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{prof.materia}}</h4>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="box-slider right">
-            <h2>It's a choice of quality for people with special needs</h2>
-            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div>
-              <img class="p-t-5" src="img/artist-testimonial-avatar-02.jpg">
-              <div>
-                <h3 class="p-t-5">{{teacher[1].nome}}</h3>
-                <h4 class="text-darkgrey p-t-5">{{teacher[1].materia}}</h4>
-              </div>
-            </div>
-          </div>
+        <div class="dot">
+          <i v-for="(dot, i) in teacher" class="fas fa-circle p-lr-10 m-tb-10" :class="(i == counter) ? 'text-black' : 'text-lightgrey' " @click="questo(i)"></i>
         </div>
       </section>
       <!-- TESTIMONIAL -->
