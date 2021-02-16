@@ -130,15 +130,32 @@
       </section>
       <!-- MEDIA -->
 
-      <!-- LOVE -->
-      <section class="love">
-
+      <!-- TESTIMONIAL -->
+      <section class="testimonial bg-lightgrey">
+        <div class="titolone p-tb-10 bg-lightgrey">
+          <strong class="text-celeste">Testimonials</strong>
+          <h2 class="p-tb-10">Why do people love me?</h2>
+        </div>
       </section>
-      <!-- LOVE -->
+      <!-- TESTIMONIAL -->
 
       <!-- CORSI -->
       <section class="corsi">
-
+        <div class="container">
+          <div class="titolone p-tb-10">
+            <strong class="text-celeste">Artist coaching</strong>
+            <h2 class="p-tb-10">Latest Online Courses</h2>
+          </div>
+          <div class="box-container-corsi">
+            <div v-for="(corso, i) in corsi" class="box-corsi">
+              <img :src="'img/artist-course-0' +(i+1)+ '-480x480.jpg'" alt="foto-corso">
+              <strong class="text-orange p-t-5">${{corso.costo}}</strong>
+              <span class="p-t-5">{{corso.nome}}</span>
+              <p class="text-darkgrey p-t-5"><i class="far fa-file-alt"></i>4 Lessons <i class="far fa-user"></i>50 Students</p>
+            </div>
+          </div>
+          <button class="button bg-lightgrey text-orange" type="button">View all courses  <i class="fas fa-arrow-right"></i></button>
+        </div>
       </section>
       <!-- CORSI -->
 

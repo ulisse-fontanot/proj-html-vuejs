@@ -60,6 +60,10 @@
   padding: 10px 0;
 }
 
+.p-t-5{
+  padding-top: 5px;
+}
+
 .m-lr-10{
   margin: 0 10px;
 }
@@ -254,6 +258,7 @@ li{
 /* MEDIA */
 .media{
   position: relative;
+  height: 650px;
 }
 
 .media .pallini-verdi{
@@ -273,6 +278,7 @@ li{
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
+  height: 570px;
 }
 
 .media .player .container-yt{
@@ -293,5 +299,45 @@ li{
   box-shadow: none;
 }
 /* MEDIA */
+
+/* TESTIMONIAL */
+.testimonial{
+  margin: 0 20px;
+}
+/* TESTIMONIAL */
+
+/* CORSI */
+.corsi .box-container-corsi{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.corsi .box-container-corsi .box-corsi{
+  font-weight: bold;
+  width: 25%;
+  padding: 10px 50px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.corsi .box-container-corsi .box-corsi:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.corsi .box-container-corsi .box-corsi img{
+  width: 100%;
+}
+
+.corsi button{
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+}
+/* CORSI */
 
 /* MAIN */
