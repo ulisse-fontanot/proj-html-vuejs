@@ -304,6 +304,37 @@ li{
 .testimonial{
   margin: 0 20px;
 }
+
+.testimonial .slider{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial .slider .box-slider{
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.testimonial .slider .box-slider>div{
+  height: 100px;
+  display: flex;
+}
+
+.testimonial .slider .box-slider>div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.testimonial .slider .box-slider div img{
+  height: 100%;
+  border-radius: 50%;
+  padding-right: 20px;
+}
 /* TESTIMONIAL */
 
 /* CORSI */
@@ -327,6 +358,7 @@ li{
 .corsi .box-container-corsi .box-corsi:hover{
   background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .corsi .box-container-corsi .box-corsi img{

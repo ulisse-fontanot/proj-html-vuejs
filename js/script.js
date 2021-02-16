@@ -35,6 +35,24 @@ var app = new Vue({
         costo: 22.00,
         nome: "The Acrylic Painting Academy"
       }
+    ],
+    teacher: [
+      {
+        nome: "Florence Themes",
+        materia: "/ Multimedia Admin"
+      },
+      {
+        nome: "Mina Hallace",
+        materia: "/ Freelancer"
+      },
+      {
+        nome: "Madley Pandor",
+        materia: "/ IT Specialist"
+      },
+      {
+        nome: "Ajeje Brazorf",
+        materia: "/ Train Passenger"
+      }
     ]
   },
   methods: {
