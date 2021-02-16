@@ -89,7 +89,7 @@
 
 /* OMBRE */
 .shadow{
-  box-shadow: 10px 10px 10px #888888;
+  box-shadow: 0px 0px 10px 10px #888888;
 }
 
 /* OGGETTI VARI */
@@ -250,5 +250,48 @@ li{
   padding: 70px 30px 0;
 }
 /* COACH */
+
+/* MEDIA */
+.media{
+  position: relative;
+}
+
+.media .pallini-verdi{
+  position: absolute;
+  top: 400px;
+  right: 18%;
+}
+
+.media .pallini-blu{
+  position: absolute;
+  top: 100px;
+  left: 18%;
+}
+
+.media .player{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.media .player .container-yt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media .player:hover .container-yt{
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  box-shadow: none;
+}
+/* MEDIA */
 
 /* MAIN */
