@@ -138,11 +138,11 @@
         </div>
 
         <div class="slider m-tb-10">
-          <div v-for="(prof, index) in teacher" class="box-slider" :class="(index == counter) ? '' : 'opacity' ">
+          <div v-for="(prof, index) in teacher" class="box-slider" :class="(index !== counter) ? 'opacity' : '' " @click="questo(index)">
             <h2>It's a choice of quality for people with special needs</h2>
             <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div>
-              <img class="p-t-5" :src="teacher.src">
+              <img class="p-t-5" :src="prof.src">
               <div>
                 <h3 class="p-t-5">{{prof.nome}}</h3>
                 <h4 class="text-darkgrey p-t-5">{{prof.materia}}</h4>
