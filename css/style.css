@@ -520,3 +520,110 @@ li{
 /* WORK */
 
 /* MAIN */
+
+/* FOOTER */
+/* MAIL */
+.mail{
+  background-color: #224184;
+  height: 200px;
+  position: relative;
+}
+
+.mail-img-left{
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.mail-img-right{
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
+.mail .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.mail .container .mail-left{
+  width: 40%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mail .container .mail-left h2{
+  width: 400px;
+  height: 80%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.mail .container .mail-right{
+  width: 60%;
+}
+
+.mail .container .mail-right input{
+  font-size: 30px;
+  width: 400px;
+  background-color: #224184;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+/* MAIL */
+
+/* FONDO */
+.fondo .container{
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fondo .container div ul li{
+  padding-top: 10px;
+}
+
+.fondo .container .address{
+  width: 30%;
+}
+
+.fondo .container .address ul li i{
+  font-size: 30px;
+}
+
+.fondo .container .address ul li i:hover{
+  color: grey;
+  cursor: pointer;
+}
+
+.fondo .container .explore{
+  width: 15%;
+}
+
+.fondo .container .info{
+  width: 15%;
+}
+
+.fondo .container .insta{
+  width: 40%;
+}
+
+.fondo .container .insta-img{
+  display: flex;
+  flex-direction: row;
+}
+
+.fondo .container .insta-img img{
+  width: calc(100% / 3);
+  padding: 10px;
+}
+/* FONDO */
+/* FOOTER */
