@@ -154,14 +154,23 @@ li{
   justify-content: center;
   align-items: center;
 }
+
+.timer button:hover{
+  background-color: white;
+  color: #efab43;
+}
 /* TIMER */
 
 /* MENU */
 .menu{
+  width: 100%;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  z-index: 5;
 }
 
 .navbar ul{
@@ -170,8 +179,45 @@ li{
   font-weight: bold;
 }
 
+.navbar>ul>li .option{
+  position: relative;
+}
+
+.navbar>ul>li .option ul{
+  width: 250%;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: -50%;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.navbar>ul>li:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.navbar>ul>li:hover .option ul{
+  display: flex;
+}
+
+.navbar>ul>li .option ul li:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 .menu .social i{
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.menu .social i:hover{
+  cursor: pointer;
+  color: grey;
 }
 /* MENU */
 
@@ -226,12 +272,14 @@ li{
   top: 300px;
   left: 200px;
   z-index: 2;
+  transition: 2s;
 }
 
 .quadro{
   position: absolute;
   top: 100px;
   left: 350px;
+  transition: 2s;
 }
 
 .ragazzo{
@@ -239,12 +287,23 @@ li{
   top: 150px;
   right: 250px;
   z-index: 2;
+  transition: 2s;
 }
 
 .pallini-verdi{
   position: absolute;
   bottom: 120px;
   right: 450px;
+}
+
+.jumbo .titolone button:hover{
+  background-color: white;
+  color: #efab43;
+}
+
+.jumbo .scimmia:hover, .jumbo .quadro:hover, .jumbo .ragazzo:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 /* JUMBO */
 
@@ -277,6 +336,11 @@ li{
 .coach .coach-right{
   width: 67%;
   padding: 70px 30px 0;
+}
+
+.coach .container button:hover{
+  background-color: #efab43;
+  color: white;
 }
 /* COACH */
 
@@ -332,13 +396,14 @@ li{
 }
 
 .testimonial .slider{
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: row;
 }
 
 .testimonial .slider .box-slider{
-  width: calc(100% / 4);
+  width: calc(100% / 3);
   height: 100%;
   padding: 20px;
   margin: 10px;
@@ -408,6 +473,11 @@ li{
   padding: 20px;
   font-size: 20px;
 }
+
+.corsi button:hover{
+  background-color: #efab43;
+  color: white;
+}
 /* CORSI */
 
 /* BLOG */
@@ -433,6 +503,7 @@ li{
   top: 300px;
   left: 22%;
   width: 200px;
+  transition: transform .2s;
 }
 
 .blog .art-right{
@@ -440,6 +511,7 @@ li{
   top: 250px;
   right: 22%;
   width: 200px;
+  transition: transform .2s;
 }
 
 .blog .art-left img, .blog .art-right img{
@@ -447,6 +519,9 @@ li{
 }
 
 .art-center{
+  background-image: url('../img/artist-blog-02-500x680.jpg');
+  background-size: cover;
+  background-position: center;
   width: 400px;
   position: absolute;
   top: 200px;
@@ -455,8 +530,9 @@ li{
   height: 544px;
 }
 
-.art-center img{
-  width: 100%;
+.blog .art-center:hover{
+  cursor: pointer;
+  background-size: 110%;
 }
 
 .art-center div{
@@ -478,6 +554,15 @@ li{
   transform: translateX(-50%);
   text-align: center;
 }
+
+.blog .fondo-blog h2:hover{
+  cursor: pointer;
+}
+
+.blog .art-left:hover, .blog .art-right:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
 /* BLOG */
 
 /* WORK */
@@ -492,6 +577,12 @@ li{
   width: 50%;
   display: flex;
   flex-direction: row;
+}
+
+.work .container .box:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .work .container .box .box-text{

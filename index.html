@@ -16,23 +16,29 @@
 
   <div id="app">
     <!-- HEADER -->
-    <header>
       <!-- TIMER -->
       <section class="timer bg-lightgrey p-tb-10">
         <span class="text-darkgrey m-lr-10">Start TOMORROW! Our biggest event of the year...</span>
         <i class="far fa-clock m-lr-10"></i>
-        <strong class="m-lr-10">00 : 00 : 00 : 00</strong>
+        <strong id="demo"></strong>
         <button class="bg-orange text-white button m-lr-10">Get started</button>
       </section>
       <!-- TIMER -->
       <!-- MENU -->
-      <section class="menu p-tb-10">
+      <section class="menu shadow bg-white p-tb-10">
         <div class="logo">
           <img src="img/dark-logo.png" alt="">
         </div>
         <div class="navbar">
           <ul>
-            <li v-for="el in menu" class="p-lr-10">{{el}}<i class="fas fa-chevron-down p-lr-10"></i></li>
+            <li v-for="el in menu" class="p-10">
+              {{el.nome}}<i class="fas fa-chevron-down p-lr-10"></i>
+              <div class="option">
+                <ul>
+                  <li class="p-t-5" v-for="opt in el.option">{{opt}}</li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="social">
@@ -62,7 +68,6 @@
         <img src="img/maxcoach-shape-05-100x100.png" class="pallini-verdi">
       </section>
       <!-- JUMBO -->
-    </header>
     <!-- HEADER -->
 
     <!-- MAIN -->
@@ -111,7 +116,7 @@
           <div class="coach-right">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="m-tb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="button bg-lightgrey text-orange m-tb-10" type="button"> Get started today</button>
+            <button class="button bg-lightgrey text-orange m-tb-10 p-20" type="button"> Get started today</button>
           </div>
         </div>
       </section>
@@ -138,17 +143,69 @@
         </div>
 
         <div class="slider m-tb-10">
-          <div v-for="(prof, index) in teacher" class="box-slider" :class="(index !== counter) ? 'opacity' : '' " @click="questo(index)">
+          <!-- WARNING: BOX SINISTRO DELLO SLIDER -->
+          <div v-if="counter == 0" class="box-slider opacity">
             <h2>It's a choice of quality for people with special needs</h2>
             <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div>
-              <img class="p-t-5" :src="prof.src">
+              <img class="p-t-5" :src="teacher[3].src">
               <div>
-                <h3 class="p-t-5">{{prof.nome}}</h3>
-                <h4 class="text-darkgrey p-t-5">{{prof.materia}}</h4>
+                <h3 class="p-t-5">{{teacher[3].nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{teacher[3].materia}}</h4>
               </div>
             </div>
           </div>
+
+          <div v-else class="box-slider opacity">
+            <h2>It's a choice of quality for people with special needs</h2>
+            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <img class="p-t-5" :src="teacher[counter-1].src">
+              <div>
+                <h3 class="p-t-5">{{teacher[counter-1].nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{teacher[counter-1].materia}}</h4>
+              </div>
+            </div>
+          </div>
+          <!-- WARNING: BOX SINISTRO DELLO SLIDER -->
+
+          <div class="box-slider">
+            <h2>It's a choice of quality for people with special needs</h2>
+            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <img class="p-t-5" :src="teacher[counter].src">
+              <div>
+                <h3 class="p-t-5">{{teacher[counter].nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{teacher[counter].materia}}</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- WARNING: BOX DESTRO DELLO SLIDER -->
+          <div v-if="counter == 3" class="box-slider opacity">
+            <h2>It's a choice of quality for people with special needs</h2>
+            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <img class="p-t-5" :src="teacher[0].src">
+              <div>
+                <h3 class="p-t-5">{{teacher[0].nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{teacher[0].materia}}</h4>
+              </div>
+            </div>
+          </div>
+
+          <div v-else class="box-slider opacity">
+            <h2>It's a choice of quality for people with special needs</h2>
+            <p class="p-t-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+              <img class="p-t-5" :src="teacher[counter+1].src">
+              <div>
+                <h3 class="p-t-5">{{teacher[counter+1].nome}}</h3>
+                <h4 class="text-darkgrey p-t-5">{{teacher[counter+1].materia}}</h4>
+              </div>
+            </div>
+          </div>
+          <!-- WARNING: BOX DESTRO DELLO SLIDER -->
         </div>
 
         <div class="dot m-tb-10">
@@ -172,7 +229,7 @@
               <p class="text-darkgrey p-t-5"><i class="far fa-file-alt"></i>4 Lessons <i class="far fa-user"></i>50 Students</p>
             </div>
           </div>
-          <button class="button bg-lightgrey text-orange" type="button">View all courses  <i class="fas fa-arrow-right"></i></button>
+          <button class="button bg-lightgrey text-orange" type="button">View all courses  <i class="fas fa-arrow-right p-l-5"></i></button>
         </div>
       </section>
       <!-- CORSI -->
@@ -199,7 +256,6 @@
         </div>
 
         <div class="art-center shadow-5">
-          <img src="img/artist-blog-02-500x680.jpg" alt="">
           <div class="p-20 text-white">
             <h4>ARTIST</h4>
             <h2 class="p-tb-10">Pocket-Sized Notebooks Hold Miniature Paintings</h2>
