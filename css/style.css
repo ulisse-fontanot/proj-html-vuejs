@@ -49,10 +49,18 @@
 }
 
 .bg-celeste{
-  background-color: rgba(#b1e4f4, 0.7);
+  background-color: rgba(177, 228, 244, 0.3);
 }
 
 /* SPAZI */
+.p-10{
+  padding: 10px;
+}
+
+.p-20{
+  padding: 20px;
+}
+
 .p-lr-10{
   padding: 0 10px;
 }
@@ -63,6 +71,14 @@
 
 .p-t-5{
   padding-top: 5px;
+}
+
+.p-r-5{
+  padding-right: 5px;
+}
+
+.p-l-5{
+  padding-left: 5px;
 }
 
 .m-lr-10{
@@ -95,6 +111,10 @@
 /* OMBRE */
 .shadow{
   box-shadow: 0px 0px 10px 10px #888888;
+}
+
+.shadow-5{
+  box-shadow: 0px 0px 10px 5px #888888;
 }
 
 /* OGGETTI VARI */
@@ -307,7 +327,7 @@ li{
 
 /* TESTIMONIAL */
 .testimonial{
-  margin: 0 20px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -367,8 +387,7 @@ li{
 .corsi .box-container-corsi .box-corsi{
   font-weight: bold;
   width: 25%;
-  padding: 10px 50px;
-  height: 375px;
+  padding: 10px 50px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -381,6 +400,7 @@ li{
 
 .corsi .box-container-corsi .box-corsi img{
   width: 100%;
+  padding: 0 50px;
 }
 
 .corsi button{
@@ -389,5 +409,114 @@ li{
   font-size: 20px;
 }
 /* CORSI */
+
+/* BLOG */
+.blog{
+  position: relative;
+  height: 850px;
+}
+
+.blog .pallini-verdi{
+  position: absolute;
+  top: 150px;
+  right: 30%;
+}
+
+.blog .spago{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+.blog .art-left{
+  position: absolute;
+  top: 300px;
+  left: 22%;
+  width: 200px;
+}
+
+.blog .art-right{
+  position: absolute;
+  top: 250px;
+  right: 22%;
+  width: 200px;
+}
+
+.blog .art-left img, .blog .art-right img{
+  width: 100%;
+}
+
+.art-center{
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 544px;
+}
+
+.art-center img{
+  width: 100%;
+}
+
+.art-center div{
+  position: absolute;
+  top: 0px;
+  padding: 370px 20px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.blog .fondo-blog{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+/* BLOG */
+
+/* WORK */
+.work .container{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work .container .box{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.work .container .box .box-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.work .container .box .box-img{
+  width: 50%;
+}
+
+.work .container .box .box-img img{
+  width: 100%;
+}
+
+.work .container .box .dir-right{
+  align-items: flex-end;
+  text-align: right;
+}
+
+.work .container .box .box-text h4{
+  color: grey;
+}
+/* WORK */
 
 /* MAIN */

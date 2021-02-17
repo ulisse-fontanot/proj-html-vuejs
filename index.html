@@ -131,7 +131,7 @@
       <!-- MEDIA -->
 
       <!-- TESTIMONIAL -->
-      <section class="testimonial bg-lightgrey">
+      <section class="testimonial bg-lightgrey p-tb-10">
         <div class="titolone p-tb-10 bg-lightgrey">
           <strong class="text-celeste">Testimonials</strong>
           <h2 class="p-tb-10">Why do people love me?</h2>
@@ -151,14 +151,14 @@
           </div>
         </div>
 
-        <div class="dot">
+        <div class="dot m-tb-10">
           <i v-for="(dot, i) in teacher" class="fas fa-circle p-lr-10 m-tb-10" :class="(i == counter) ? 'text-black' : 'text-lightgrey' " @click="questo(i)"></i>
         </div>
       </section>
       <!-- TESTIMONIAL -->
 
       <!-- CORSI -->
-      <section class="corsi">
+      <section class="corsi p-tb-10">
         <div class="container">
           <div class="titolone p-tb-10">
             <strong class="text-celeste">Artist coaching</strong>
@@ -178,14 +178,104 @@
       <!-- CORSI -->
 
       <!-- BLOG -->
-      <section class="blog">
+      <section class="blog bg-celeste p-tb-10">
+        <img src="img/maxcoach-shape-05.png" class="pallini-verdi">
+        <img src="img/maxcoach-shape-03.png" class="spago">
 
+        <div class="titolone p-tb-10">
+          <strong class="text-celeste">Articles and Tips</strong>
+          <h2 class="p-tb-10">Latest From The Blog</h2>
+        </div>
+
+        <div class="art-left bg-white shadow-5">
+          <img src="img/artist-blog-03-480x356.jpeg" alt="vecchio">
+          <div class="p-10">
+            <h4 class="text-darkgrey">ARTIST</h4>
+            <h3 class="text-darkgrey">Brush Strokes Energize Trees in Paintings</h3>
+            <p class="text-darkgrey">
+              <i class="far fa-calendar-alt p-r-5"></i>May 15, 2020<i class="far fa-eye p-r-5"></i>688 views
+            </p>
+          </div>
+        </div>
+
+        <div class="art-center shadow-5">
+          <img src="img/artist-blog-02-500x680.jpg" alt="">
+          <div class="p-20 text-white">
+            <h4>ARTIST</h4>
+            <h2 class="p-tb-10">Pocket-Sized Notebooks Hold Miniature Paintings</h2>
+            <p>
+              <i class="far fa-calendar-alt p-r-5"></i>May 15, 2020 <i class="far fa-eye p-l-5 p-r-5"></i>603 views
+            </p>
+          </div>
+        </div>
+
+        <div class="art-right bg-white shadow-5">
+          <img src="img/artist-blog-01-480x356.jpg" alt="vecchio">
+          <div class="p-10">
+            <h4 class="text-darkgrey">ARTIST</h4>
+            <h3 class="text-darkgrey">Pocket-Sized Notebooks Hold Miniature Paintings</h3>
+            <p class="text-darkgrey">
+              <i class="far fa-calendar-alt p-r-5"></i>May 15, 2020<i class="far fa-eye p-r-5"></i>603 views
+            </p>
+          </div>
+        </div>
+
+        <div class="fondo-blog m-tb-10"><h3 class="text-darkgrey">Get into details now?</h3> <h2 class="text-orange p-l-5">View all posts<i class="fas fa-arrow-right p-l-5"></i></h2></div>
       </section>
       <!-- BLOG -->
 
       <!-- WORK -->
-      <section class="work">
+      <section class="work p-tb-10">
+        <div class="titolone p-tb-10">
+          <strong class="text-celeste">Upcoming Events</strong>
+          <h2 class="p-tb-10">Let's Work Together</h2>
+        </div>
 
+        <div class="container">
+          <div class="box">
+            <div class="box-img p-20">
+              <img src="img/artist-event-04-250x300.jpg">
+            </div>
+            <div class="box-text p-10">
+              <h4 class="p-tb-10">NOV 22, 2020</h4>
+              <h3 class="p-tb-10">Storytelling Workshop</h3>
+              <h4 class="p-tb-10"><i class="fas fa-map-marker-alt p-r-5"></i>Texas, US</h4>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-img p-20">
+              <img src="img/artist-event-03-250x300.jpg">
+            </div>
+            <div class="box-text p-10">
+              <h4 class="p-tb-10">OCT 10, 2020</h4>
+              <h3 class="p-tb-10">Painting Art Contest 2020</h3>
+              <h4 class="p-tb-10"><i class="fas fa-map-marker-alt p-r-5"></i>New York, US</h4>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-text dir-right p-10">
+              <h4 class="p-tb-10">NOV 23, 2020</h4>
+              <h3 class="p-tb-10">International Art Fair 2020</h3>
+              <h4 class="p-tb-10"><i class="fas fa-map-marker-alt p-r-5"></i>Hamburg, Germany</h4>
+            </div>
+            <div class="box-img p-20">
+              <img src="img/artist-event-02-250x300.jpg">
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-text dir-right p-10">
+              <h4 class="p-tb-10">DEC 15, 2020</h4>
+              <h3 class="p-tb-10">Street Performance: Call for Artist</h3>
+              <h4 class="p-tb-10"><i class="fas fa-map-marker-alt p-r-5"></i>Illinois, US</h4>
+            </div>
+            <div class="box-img p-20">
+              <img src="img/artist-event-01-250x300.jpg">
+            </div>
+          </div>
+        </div>
       </section>
       <!-- WORK -->
     </main>
