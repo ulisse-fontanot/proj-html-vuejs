@@ -147,6 +147,10 @@ var app = new Vue({
     questo(indice){
       this.counter = indice;
       console.log(this.counter);
+    },
+    tornaSu() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   }
 });

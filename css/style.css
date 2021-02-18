@@ -511,7 +511,7 @@ li{
   top: 250px;
   right: 22%;
   width: 200px;
-  transition: transform .2s;
+  transition: background-size 2s;
 }
 
 .blog .art-left img, .blog .art-right img{
@@ -676,6 +676,7 @@ li{
   padding: 30px;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .fondo .container div ul li{
@@ -715,6 +716,17 @@ li{
 .fondo .container .insta-img img{
   width: calc(100% / 3);
   padding: 10px;
+}
+
+.tornaSu{
+  position: absolute;
+  bottom: 50px;
+  right: -100px;
+  border-radius: 50%;
+}
+
+.tornaSu:hover{
+  cursor: pointer;
 }
 /* FONDO */
 /* FOOTER */
